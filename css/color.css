@@ -1,0 +1,24 @@
+/* ---------- Parent ---------- */
+body {
+    background-color: #e4e4e4;
+}
+
+/* ---------- Matrix Canvas ---------- */
+#modern-matrix-overlay {
+    background-color: black;
+}
+#modern-matrix-about {
+    color: white;
+}
+#sidebar {
+    background-color: #3C4859;
+}
+i {
+    color: white;
+}
+.menu-item {
+    color: white;
+}
+.menu-parent:not(.active):hover {
+    background-color: #323b46;
+}

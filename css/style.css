@@ -1,0 +1,74 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+#modern-matrix-wrapper {
+    background-image: url(../images/background3.jpg);
+    background-position: 0;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+#modern-matrix-overlay {
+    opacity: .35;
+}
+#modern-matrix-about {
+    text-shadow: 6px 6px 15px black;
+}
+#typewrite:before {
+    content: '\f120';
+    font-family: 'FontAwesome';
+    margin-right: 5px;
+}
+#typewrite.hide-pseudo:before {
+    display: none;
+}
+#modern-matrix-about h1 {
+    font-size: 45px;
+    margin: 0 0 10px 0;
+}
+#modern-matrix-about h3 {
+    font-size: 23.7px;
+    font-weight: normal;
+    margin: 0;
+}
+#social-buttons {
+    text-align: center;
+    border-bottom: thin solid #29303c;
+}
+#social-buttons a {
+    height: 100%;
+}
+#social-buttons i {
+    width: 23%;
+    font-size: 40px !important;
+    text-shadow: 2px 2px 5px #1b1b1b;
+    transition: .3s;
+}
+#social-buttons i:hover {
+    cursor: pointer;
+    font-size: 45px !important;
+    text-shadow: 4px 4px 10px #1b1b1b;
+    transition: .3s;
+}
+.menu-item {
+    font-size: 18px;
+}
+.menu-parent.active {
+    background-color: #b9394c;
+    transition: .1s;
+}
+.menu-parent.active:after {
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #b9394c;
+    transition: .1s;
+}
+.menu-parent:not(.active):hover {
+    transition: .1s;
+}
+.fa-arrow-circle-o-down {
+    font-size: 20px;
+    display: none;
+    /* opacity: .85; */
+}

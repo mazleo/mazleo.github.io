@@ -1,0 +1,108 @@
+/* ---------- Parent ---------- */
+html, body {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------- Matrix Canvas ---------- */
+.matrix-background {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+#modern-matrix-wrapper {
+    z-index: 1;
+}
+#modern-matrix-canvas {
+    z-index: 2;
+}
+#modern-matrix-overlay {
+    z-index: 3;
+}
+#modern-matrix-about {
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+/* ---------- Content ---------- */
+#content-wrapper {
+    display: block;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    top: 100%;
+    padding: 0;
+    margin: 0;
+}
+#sidebar {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    width: 23%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+#content {
+    display: inline-block;
+    width: 77%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+#social-buttons {
+    display: block;
+    padding: 20px;
+}
+#menu {
+    padding: 23px 0 23px 0;
+    margin: 0;
+}
+.menu-item {
+    display: block;
+    padding: 23px 62px;
+    text-align: right;
+}
+/*
+.menu-item:first-of-type {
+    padding-top: 43px;
+}
+.menu-item:last-of-type {
+    padding-bottom: 43px;
+}
+*/
+.menu-parent.active:after {
+    content: "";
+    height: 0;
+    float: right;
+    position: relative;
+    top: -42px;
+    left: 20px;
+}
+.fa-arrow-circle-o-down {
+    position: relative;
+    top: 36%;
+}

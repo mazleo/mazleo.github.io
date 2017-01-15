@@ -1,10 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Personal website</title>
-  </head>
-  <body>
-    <h2>Hello World!</h2>
-    <p><em>Coming soon...</em></p>
-  </body>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/color.css">
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.typeit/4.3.0/typeit.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="modern-matrix-wrapper" class="modern-matrix wrapper matrix-background"></div>
+        <div id="modern-matrix-canvas" class="modern-matrix matrix-background"></div>
+        <div id="modern-matrix-overlay" class="modern-matrix matrix-background"></div>
+        <div id="modern-matrix-about" class="modern-matrix">
+            <h1>JONNELIN MARZIELLI LEONARDO</h1>
+            <h3 id="typewrite"></h3>
+            <h3 id="print"></h3>
+            <h3 id="cursor"></h3>
+            <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+        </div>
+
+        <div id="content-wrapper" class="content wrapper">
+            <div id="sidebar" class="content">
+                <div id="social-buttons" class="content">
+                    <a href="https://github.com/mazleo" target="_blank"><i class="fa fa-github-square" aria-hidden="true" title="Github" data-toggle="tooltip"></i></a>
+
+                    <a href="https://www.linkedin.com/in/jonnelin-marzielli-leonardo" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" title="LinkedIn" data-toggle="tooltip"></i></a>
+
+                    <a href="mailto:jonnelin.leonardo@gmail.com"><i class="fa fa-envelope" aria-hidden="true" title="Email" data-toggle="tooltip"></i></a>
+
+                    <a href="docs/TempResume.pdf" target="_blank"><i class="fa fa-file-text" aria-hidden="true" title="Resume" data-toggle="tooltip"></i></a>
+                </div>
+                <div id="menu" class="content">
+                    <div class="menu-parent" onclick="setNewActiveMenu(1)">
+                        <div class="menu-item">Education</div>
+                    </div>
+                    <div class="menu-parent" onclick="setNewActiveMenu(2)">
+                        <div class="menu-item">Experience</div>
+                    </div>
+                    <div class="menu-parent" onclick="setNewActiveMenu(3)">
+                        <div class="menu-item">Skills</div>
+                    </div>
+                    <div class="menu-parent" onclick="setNewActiveMenu(4)">
+                        <div class="menu-item">Projects</div>
+                    </div>
+                    <div class="menu-parent" onclick="setNewActiveMenu(5)">
+                        <div class="menu-item">Contact</div>
+                    </div>
+                </div>
+            </div>
+            <div id="content" class="content">
+                <div id="about-info" class="content about">
+                    <div id="about-me" class="content about"></div>
+                </div>
+                <div id="about-career" class="content about"></div>
+            </div>
+        </div>
+    </body>
 </html>
