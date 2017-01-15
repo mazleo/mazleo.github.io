@@ -39,16 +39,18 @@ body {
     height: 100%;
 }
 #social-buttons i {
-    width: 23%;
     font-size: 40px !important;
     text-shadow: 2px 2px 5px #1b1b1b;
-    transition: .3s;
+    transition: .1s;
 }
 #social-buttons i:hover {
     cursor: pointer;
     font-size: 45px !important;
     text-shadow: 4px 4px 10px #1b1b1b;
-    transition: .3s;
+    transition: .1s;
+}
+#sidebar {
+    border-right: thin solid #2f3a4a;
 }
 .menu-item {
     font-size: 18px;
@@ -71,4 +73,12 @@ body {
     font-size: 20px;
     display: none;
     /* opacity: .85; */
+}
+.tab {
+    border-radius: 30px 0px 0px 30px;
+    box-shadow: 2px 2px 15px #1b1a1a;
+}
+.tab + .content {
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 2px 2px 15px #1b1a1a;
 }

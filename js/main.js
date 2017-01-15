@@ -4,6 +4,11 @@ var currentActiveMenu = 1;
 $(document).ready(function() {
   setNewActiveMenu(currentActiveMenu);
 
+  // Add listener to scroll event
+  $(window).scroll(function(event) {
+    removeIcon();
+  });
+
   // Typewrite hero text
   $('#typewrite').typeIt({
     strings: 'print description',
@@ -18,14 +23,15 @@ $(document).ready(function() {
           strings: ' ',
           cursor:true,
           callback: function() {
-            $('.fa-arrow-circle-o-down').css({
-              'display': 'block',
-              '-webkit-animation-duration': '3s',
-              '-moz-animation-duration': '3s',
-              'animation-duration': '3s',
-            });
+
             $('.fa-arrow-circle-o-down').addClass('animated fadeInDown');
             setTimeout(function() {
+              $('.fa-arrow-circle-o-down').css({
+                'display': 'block',
+                '-webkit-animation-duration': '3s',
+                '-moz-animation-duration': '3s',
+                'animation-duration': '3s',
+              });
               $('.fa-arrow-circle-o-down').removeClass('fadeInDown');
               $('.fa-arrow-circle-o-down').addClass('infinite bounce');
             }, 2000);
@@ -52,4 +58,24 @@ function setNewActiveMenu(newActiveMenu) {
   $(oldActiveSelector).removeClass('active');
   $(newActiveSelector).addClass('active');
   currentActiveMenu = newActiveMenu;
+}
+
+function removeIcon() {
+  if ($(window).scrollTop() > 240 && $('.fa-arrow-circle-o-down').hasClass('bounce')) {
+    $('.fa-arrow-circle-o-down').removeClass('infinite');
+    $('.fa-arrow-circle-o-down').removeClass('bounce');
+    $('.fa-arrow-circle-o-down').addClass('fadeOutUp');
+  }
+  else if ($(window).scrollTop() <= 240 && !$('.fa-arrow-circle-o-down').hasClass('bounce')) {
+    if ($('.fa-arrow-circle-o-down').hasClass('fadeOutUp')) {
+      $('.fa-arrow-circle-o-down').removeClass('fadeOutUp');
+    }
+
+    $('.fa-arrow-circle-o-down').addClass('animated fadeInDown');
+    setTimeout(function() {
+      $('.fa-arrow-circle-o-down').removeClass('fadeInDown');
+      $('.fa-arrow-circle-o-down').addClass('infinite bounce');
+    }, 2000);
+
+  }
 }

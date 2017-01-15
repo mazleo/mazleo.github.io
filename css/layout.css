@@ -5,6 +5,11 @@ html, body {
     width: 100%;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
 }
 
 /* ---------- Matrix Canvas ---------- */
@@ -47,35 +52,61 @@ html, body {
     display: block;
     width: 100%;
     min-height: 300px;
-    position: relative;
+    position: absolute;
     top: 100%;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex: 1 0 100%;
 }
 #sidebar {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
-    width: 23%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    /* width: 23%; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
     z-index: 10;
+    /* height: 100%; */
+    flex: 1 0 23%;
 }
 #content {
     display: inline-block;
-    width: 77%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    overflow: hidden;
+    /* width: 77%; */
+    /* height: 100%; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 0; */
+    /* overflow: hidden; */
+    z-index: 10;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex: 1 0 77%;
 }
 #social-buttons {
     display: block;
     padding: 20px;
+    display: flex;
+    min-height: 76px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 15px 11%;
+}
+#social-buttons i {
+    flex: 0 1;
+    /* width: 23%; */
 }
 #menu {
     padding: 23px 0 23px 0;
@@ -99,10 +130,35 @@ html, body {
     height: 0;
     float: right;
     position: relative;
-    top: -42px;
+    top: -44.5px;
     left: 20px;
 }
 .fa-arrow-circle-o-down {
     position: relative;
     top: 36%;
+}
+#about-career {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+.about-tabs {
+    /* display: block; */
+    min-height: 150px;
+    /* padding: 30px; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+.tab {
+    flex: 1 0 5%;
+    margin: 30px 0 30px 30px;
+}
+.tab + .content {
+    flex: 1 0 87%;
+    margin: 30px;
 }
