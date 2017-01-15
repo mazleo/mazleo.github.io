@@ -135,7 +135,7 @@ html, body {
 }
 .fa-arrow-circle-o-down {
     position: relative;
-    top: 36%;
+    top: 32%;
 }
 #about-career {
     display: flex;
@@ -154,11 +154,46 @@ html, body {
     align-items: stretch;
     align-content: stretch;
 }
+#about-me,
+.about-tabs {
+    padding: 15px 15px;
+}
 .tab {
     flex: 1 0 5%;
-    margin: 30px 0 30px 30px;
+    margin: 20px 0 20px 120px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
 }
 .tab + .content {
-    flex: 1 0 87%;
-    margin: 30px;
+    flex: 1 0 67%;
+    margin: 20px 120px 20px 30px;
+    padding: 15px;
+}
+table {
+    height: 100%;
+    width: 100%;
+    max-width: 100vw;
+}
+table td {
+    max-width: 41vw;
+    height: 100%;
+}
+table tr td:nth-of-type(1) {
+    max-width: 35%;
+    width: 35%;
+}
+table tr td:nth-of-type(2) {
+    max-width: 65%;
+    width: 65%;
+    padding: 15px 20px;
+    vertical-align: top;
+}
+table tr td img {
+    max-width: 100%;
+}
+table h4 {
+    margin-top: 0;
 }

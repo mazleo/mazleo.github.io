@@ -35,18 +35,23 @@ i {
 #red-tab {
     background-color: #b9394c;
 }
-#blue-tab {
+#blue-tab,
+.blue-menu {
     background-color: #247BA0;
 }
-#purple-tab {
+#purple-tab,
+.purple-menu {
     background-color: #8866BA;
 }
-#pink-tab {
+#pink-tab,
+.pink-menu {
     background-color: #B83E7F;
 }
-#orange-tab {
+#orange-tab,
+.orange-menu {
     background-color: #D55E3B;
 }
-#green-tab {
+#green-tab,
+.green-menu {
     background-color: #35A281;
 }

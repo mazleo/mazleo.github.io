@@ -1,12 +1,14 @@
 // Initialize menu item states
 var currentActiveMenu = 1;
+var menuColor = 'red-menu';
 
 $(document).ready(function() {
   setNewActiveMenu(currentActiveMenu);
 
   // Add listener to scroll event
   $(window).scroll(function(event) {
-    removeIcon();
+    setIconDisplay();
+    setTabDisplay();
   });
 
   // Typewrite hero text
@@ -25,16 +27,16 @@ $(document).ready(function() {
           callback: function() {
 
             $('.fa-arrow-circle-o-down').addClass('animated fadeInDown');
+            $('.fa-arrow-circle-o-down').css({'display': 'block'});
             setTimeout(function() {
               $('.fa-arrow-circle-o-down').css({
-                'display': 'block',
                 '-webkit-animation-duration': '3s',
                 '-moz-animation-duration': '3s',
                 'animation-duration': '3s',
               });
               $('.fa-arrow-circle-o-down').removeClass('fadeInDown');
               $('.fa-arrow-circle-o-down').addClass('infinite bounce');
-            }, 2000);
+            }, 1000);
           }
         });
       }, 1000);
@@ -50,17 +52,48 @@ function getCurrentActiveMenu() {
   return currentActiveMenu;
 }
 
+// Gets the current active menu color
+function getCurrentActiveMenuColor() {
+  return menuColor;
+}
+
 // Sets a new active menu
 function setNewActiveMenu(newActiveMenu) {
   var oldActiveMenu = getCurrentActiveMenu();
+  var oldActiveMenuColor = getCurrentActiveMenuColor();
+
   var oldActiveSelector = '.menu-parent:nth-of-type(' + oldActiveMenu + ')';
   var newActiveSelector = '.menu-parent:nth-of-type(' + newActiveMenu + ')';
+
+  var color = '';
+  switch (newActiveMenu) {
+    case 1:
+      color = 'blue';
+      break;
+    case 2:
+      color = 'purple';
+      break;
+    case 3:
+      color = 'pink';
+      break;
+    case 4:
+      color = 'orange';
+      break;
+    case 5:
+      color = 'green';
+      break;
+  }
+  color += '-menu';
+
   $(oldActiveSelector).removeClass('active');
-  $(newActiveSelector).addClass('active');
+  $(oldActiveSelector).removeClass(oldActiveMenuColor);
+  $(newActiveSelector).addClass('active ' + color);
+
+  menuColor = color;
   currentActiveMenu = newActiveMenu;
 }
 
-function removeIcon() {
+function setIconDisplay() {
   if ($(window).scrollTop() > 240 && $('.fa-arrow-circle-o-down').hasClass('bounce')) {
     $('.fa-arrow-circle-o-down').removeClass('infinite');
     $('.fa-arrow-circle-o-down').removeClass('bounce');
@@ -78,4 +111,14 @@ function removeIcon() {
     }, 2000);
 
   }
+}
+
+function setTabDisplay() {
+  if ($(window).scrollTop() > 140) {
+    $('.about-tabs').addClass('animated fadeInUp');
+  }
+  // else {
+  //   $('.about-tabs').removeClass('animated');
+  //   $('.about-tabs').removeClass('fadeInUp');
+  // }
 }
