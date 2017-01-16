@@ -8,10 +8,15 @@ $(document).ready(function() {
 
   // Add listener to scroll event
   $(window).scroll(function(event) {
-    console.log($(window).scrollTop());
     setMenuBar();
     setIconDisplay();
     initTabDisplay();
+  });
+
+  $('#top-menu-item').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    });
   });
 
   // Typewrite hero text
@@ -150,7 +155,6 @@ function changeTabDisplay(oldActiveMenu, newActiveMenu) {
 
 function setMenuBar() {
   if ($(window).scrollTop() > 190) {
-    console.log('test');
     $('#top-menu').css('display', 'block');
     $('#top-menu-item').css('display', 'inline-block');
     $('#top-menu').removeClass('slideOutUp');
