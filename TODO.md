@@ -1,6 +1,5 @@
 # TODO
 
-- Setup and test contact form
 - Add matrix feature
 - Test on multiple browsers
 - Clean up code
@@ -13,3 +12,4 @@
 - Add scroll transition
 - Add responsive compatibility
 - Add resume
+- Setup and test contact form
