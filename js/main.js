@@ -1,14 +1,17 @@
 // Initialize menu item states
 var currentActiveMenu = 1;
 var menuColor = 'red-menu';
+var tabsInitialized = false;
 
 $(document).ready(function() {
   setNewActiveMenu(currentActiveMenu);
 
   // Add listener to scroll event
   $(window).scroll(function(event) {
+    console.log($(window).scrollTop());
+    setMenuBar();
     setIconDisplay();
-    setTabDisplay();
+    initTabDisplay();
   });
 
   // Typewrite hero text
@@ -91,6 +94,8 @@ function setNewActiveMenu(newActiveMenu) {
 
   menuColor = color;
   currentActiveMenu = newActiveMenu;
+
+  changeTabDisplay(oldActiveMenu, newActiveMenu);
 }
 
 function setIconDisplay() {
@@ -113,12 +118,50 @@ function setIconDisplay() {
   }
 }
 
-function setTabDisplay() {
-  if ($(window).scrollTop() > 140) {
-    $('.about-tabs').addClass('animated fadeInUp');
+function initTabDisplay() {
+  if ($(window).scrollTop() > 145
+      && !$('#about-info').hasClass('fadeInUp')) {
+    $('#about-info').css('display', 'flex');
+    $('#about-info').addClass('animated fadeInUp');
   }
+  if ($(window).scrollTop() > 350 
+      && menuColor == 'blue-menu'
+      && !$('#about-career .about-tabs:nth-of-type(1)').hasClass('fadeInUp')) {
+    $('#about-career .about-tabs:nth-of-type(1)').css('display', 'flex');
+    $('#about-career .about-tabs:nth-of-type(1)').addClass('animated fadeInUp');
+  }
+  $('#about-career .about-tabs:nth-of-type(1) ~ .about-tabs').addClass('animated fadeInUp');
   // else {
-  //   $('.about-tabs').removeClass('animated');
-  //   $('.about-tabs').removeClass('fadeInUp');
+  //   $('#about-career .about-tabs').removeClass('animated');
+  //   $('#about-career .about-tabs').removeClass('fadeInUp');
   // }
+
+  tabsInitialized = true;
+}
+
+function changeTabDisplay(oldActiveMenu, newActiveMenu) {
+  if (tabsInitialized) {
+    var oldActiveSelector = '#about-career .about-tabs:nth-of-type(' + oldActiveMenu + ')';
+    var newActiveSelector = '#about-career .about-tabs:nth-of-type(' + newActiveMenu + ')';
+    $(oldActiveSelector).css('display', 'none');
+    $(newActiveSelector).css('display', 'flex');
+  }
+}
+
+function setMenuBar() {
+  if ($(window).scrollTop() > 190) {
+    console.log('test');
+    $('#top-menu').css('display', 'block');
+    $('#top-menu-item').css('display', 'inline-block');
+    $('#top-menu').removeClass('slideOutUp');
+    $('#top-menu-item').removeClass('slideOutUp');
+    $('#top-menu').addClass('slideInDown');
+    $('#top-menu-item').addClass('slideInDown');
+  }
+  else {
+    $('#top-menu').removeClass('slideInDown');
+    $('#top-menu-item').removeClass('slideInDown');
+    $('#top-menu').addClass('slideOutUp');
+    $('#top-menu-item').addClass('slideOutUp');
+  }
 }

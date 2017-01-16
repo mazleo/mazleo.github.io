@@ -14,6 +14,8 @@
         <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
+        <a href="#modern-matrix-wrapper"><div id="top-menu-item" class="menu-bar animated">Matrix</div></a>
+        <div id="top-menu" class="menu-bar animated"></div>
         <div id="modern-matrix-wrapper" class="modern-matrix wrapper matrix-background"></div>
         <div id="modern-matrix-canvas" class="modern-matrix matrix-background"></div>
         <div id="modern-matrix-overlay" class="modern-matrix matrix-background"></div>
@@ -46,7 +48,7 @@
                     <div class="menu-parent" onclick="setNewActiveMenu(3)">
                         <div class="menu-item">Skills</div>
                     </div>
-                    <div class="menu-parent" onclick="setNewActiveMenu(4)">
+                    <div class="menu-parent hidden" onclick="setNewActiveMenu(4)">
                         <div class="menu-item">Projects</div>
                     </div>
                     <div class="menu-parent" onclick="setNewActiveMenu(5)">
@@ -123,15 +125,85 @@
                     </div>
                     <div class="about-tabs">
                         <div id="pink-tab" class="tab"><i class="fa fa-certificate" aria-hidden="true"></i></div>
-                        <div id="skills-tab" class="content about"></div>
+                        <div id="skills-tab" class="content about">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="tab-title"><h4><strong>SKILLS</strong></h4></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="images/code.png"/></td>
+                                        <td>
+                                            <p><strong>Languages:</strong> HTML, CSS, Java, JavaScript, jQuery, Bootstrap, Python</p>
+                                            <p><strong>Web Management Software:</strong> Front-End Drupal</p>
+                                            <p><strong>Version Control:</strong> Git</p>
+                                            <p><strong>Operating Systems:</strong> Debian, Windows</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <div class="about-tabs">
+                    <div class="about-tabs hidden">
                         <div id="orange-tab" class="tab"><i class="fa fa-rocket" aria-hidden="true"></i></div>
-                        <div id="projects-tab" class="content about"></div>
+                        <div id="projects-tab" class="content about">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="tab-title"><h4><strong>PROJECTS</strong></h4></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="images/flash.png"/></td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/blackjack.jpg"/></td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>RUSpy</h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>SOLITAIRE</h4>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="about-tabs">
                         <div id="green-tab" class="tab"><i class="fa fa-comment" aria-hidden="true"></i></div>
-                        <div id="contacts-tab" class="content about"></div>
+                        <div id="contacts-tab" class="content about">
+                            <h4><strong>CONTACT</strong></h4>
+                            <form class="form-horizontal" method="POST" action="http://formspree.io/jleonardo427@aol.com">
+                              <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="inputText3" class="col-sm-2 control-label">Message</label>
+                                <div class="col-sm-10">
+                                    <textarea type="text" class="form-control" rows="7" id="inputText3" placeholder="Message" name="textarea"></textarea>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                  <button type="submit" class="btn btn-default">Send</button>
+                                </div>
+                              </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
