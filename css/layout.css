@@ -166,13 +166,13 @@ html, body {
   #sidebar {
     display: none;
   }
-  /*
+  #about-info,
+  #about-career .about-tabs:nth-of-type(1),
   #about-career .about-tabs:nth-of-type(2),
   #about-career .about-tabs:nth-of-type(3),
   #about-career .about-tabs:nth-of-type(5) {
-    display: flex;
+    display: flex !important;
   }
-  */
 }
 @media screen and (min-width: 601px) {
   .mobile {

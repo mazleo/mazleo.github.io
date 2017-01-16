@@ -32,6 +32,7 @@ body {
 }
 #modern-matrix-about {
     text-shadow: 6px 6px 15px black;
+    text-align: center;
 }
 #typewrite:before {
     content: '\f120';

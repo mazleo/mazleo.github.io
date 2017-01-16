@@ -124,24 +124,26 @@ function setIconDisplay() {
 }
 
 function initTabDisplay() {
-  if ($(window).scrollTop() > 145
-      && !$('#about-info').hasClass('fadeInUp')) {
-    $('#about-info').css('display', 'flex');
-    $('#about-info').addClass('animated fadeInUp');
-  }
-  if ($(window).scrollTop() > 350 
-      && menuColor == 'blue-menu'
-      && !$('#about-career .about-tabs:nth-of-type(1)').hasClass('fadeInUp')) {
-    $('#about-career .about-tabs:nth-of-type(1)').css('display', 'flex');
-    $('#about-career .about-tabs:nth-of-type(1)').addClass('animated fadeInUp');
-  }
-  $('#about-career .about-tabs:nth-of-type(1) ~ .about-tabs').addClass('animated fadeInUp');
-  // else {
-  //   $('#about-career .about-tabs').removeClass('animated');
-  //   $('#about-career .about-tabs').removeClass('fadeInUp');
-  // }
+  if (!isSmallScreen()) {
+    if ($(window).scrollTop() > 145
+        && !$('#about-info').hasClass('fadeInUp')) {
+      $('#about-info').css('display', 'flex');
+      $('#about-info').addClass('animated fadeInUp');
+    }
+    if ($(window).scrollTop() > 350 
+        && menuColor == 'blue-menu'
+        && !$('#about-career .about-tabs:nth-of-type(1)').hasClass('fadeInUp')) {
+      $('#about-career .about-tabs:nth-of-type(1)').css('display', 'flex');
+      $('#about-career .about-tabs:nth-of-type(1)').addClass('animated fadeInUp');
+    }
+    $('#about-career .about-tabs:nth-of-type(1) ~ .about-tabs').addClass('animated fadeInUp');
+    // else {
+    //   $('#about-career .about-tabs').removeClass('animated');
+    //   $('#about-career .about-tabs').removeClass('fadeInUp');
+    // }
 
-  tabsInitialized = true;
+    tabsInitialized = true;
+  }  
 }
 
 function changeTabDisplay(oldActiveMenu, newActiveMenu) {
@@ -168,4 +170,15 @@ function setMenuBar() {
     $('#top-menu').addClass('slideOutUp');
     $('#top-menu-item').addClass('slideOutUp');
   }
+}
+
+function isSmallScreen() {
+  var isMobile = false; 
+
+  var width = $(window).width();
+  if (width <= 600) {
+    isMobile = true;
+  }
+
+  return isMobile;
 }

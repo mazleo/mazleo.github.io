@@ -1,8 +1,5 @@
 # TODO
 
-- Add responsive compatibility
-- Add resume
-- Push to Github
 - Setup and test contact form
 - Add matrix feature
 - First test on multiple browsers
@@ -16,3 +13,5 @@
 **1.16.17**
 
 - Add scroll transition
+- Add responsive compatibility
+- Add resume
