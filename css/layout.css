@@ -70,7 +70,7 @@ html, body {
     justify-content: flex-start;
     align-items: center;
     align-content: stretch;
-    padding: 17% 17% 0 17%;
+    padding: 36vh 24vw 0 24vw;
 }
 
 /* ---------- Content ---------- */
@@ -169,8 +169,8 @@ html, body {
     left: 20px;
 }
 .fa-arrow-circle-o-down {
-    position: relative;
-    top: 50%;
+    position: absolute;
+    bottom: 25px;
 }
 @media screen and (max-width: 600px) {
   .mobile {
