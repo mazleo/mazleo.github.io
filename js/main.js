@@ -127,13 +127,17 @@ function initTabDisplay() {
   if (!isSmallScreen()) {
     if ($(window).scrollTop() > 145
         && !$('#about-info').hasClass('fadeInUp')) {
-      $('#about-info').css('display', 'flex');
+      $('#about-info').css({
+        'display': 'flex',
+      });
       $('#about-info').addClass('animated fadeInUp');
     }
     if ($(window).scrollTop() > 350 
         && menuColor == 'blue-menu'
         && !$('#about-career .about-tabs:nth-of-type(1)').hasClass('fadeInUp')) {
-      $('#about-career .about-tabs:nth-of-type(1)').css('display', 'flex');
+      $('#about-career .about-tabs:nth-of-type(1)').css({
+          'display': 'flex',
+      });
       $('#about-career .about-tabs:nth-of-type(1)').addClass('animated fadeInUp');
     }
     $('#about-career .about-tabs:nth-of-type(1) ~ .about-tabs').addClass('animated fadeInUp');
@@ -151,7 +155,9 @@ function changeTabDisplay(oldActiveMenu, newActiveMenu) {
     var oldActiveSelector = '#about-career .about-tabs:nth-of-type(' + oldActiveMenu + ')';
     var newActiveSelector = '#about-career .about-tabs:nth-of-type(' + newActiveMenu + ')';
     $(oldActiveSelector).css('display', 'none');
-    $(newActiveSelector).css('display', 'flex');
+    $(newActiveSelector).css({
+      'display': 'flex',
+    });
   }
 }
 
