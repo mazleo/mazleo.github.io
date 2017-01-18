@@ -67,9 +67,10 @@ html, body {
     display: -webkit-flex;
     display: -moz-flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     align-content: stretch;
+    padding: 17% 17% 0 17%;
 }
 
 /* ---------- Content ---------- */
@@ -169,7 +170,7 @@ html, body {
 }
 .fa-arrow-circle-o-down {
     position: relative;
-    top: 32%;
+    top: 50%;
 }
 @media screen and (max-width: 600px) {
   .mobile {
