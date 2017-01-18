@@ -174,19 +174,19 @@ html, body {
 }
 @media screen and (max-height: 580px) {
   .fa-arrow-circle-o-down {
-      top: 25vh;
+      top: 15vh;
   }
 }
 
 @media screen and (max-height: 490px) {
   .fa-arrow-circle-o-down {
-      top: 15vh;
+      top: 5vh;
   }
 }
 
 @media screen and (max-height: 400px) {
   .fa-arrow-circle-o-down {
-      top: 5vh;
+      top: 0vh;
   }
 }
 @media screen and (max-width: 600px) {
