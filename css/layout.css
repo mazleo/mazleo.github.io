@@ -171,6 +171,8 @@ html, body {
 .fa-arrow-circle-o-down {
     position: absolute;
     bottom: 25px;
+    width: 100%;
+    text-align: center;
 }
 @media screen and (max-width: 600px) {
   .mobile {
