@@ -172,6 +172,23 @@ html, body {
     position: relative;
     top: 30vh;
 }
+@media screen and (max-height: 580px) {
+  .fa-arrow-circle-o-down {
+      top: 25vh;
+  }
+}
+
+@media screen and (max-height: 490px) {
+  .fa-arrow-circle-o-down {
+      top: 15vh;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .fa-arrow-circle-o-down {
+      top: 5vh;
+  }
+}
 @media screen and (max-width: 600px) {
   .mobile {
     display: flex;
