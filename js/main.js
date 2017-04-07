@@ -27,7 +27,7 @@ $(document).ready(function() {
       setTimeout(function() {
         $('#typewrite').append(' <i class="fa fa-level-down" aria-hidden="true"></i>');
         $('#typewrite').addClass('hide-pseudo');
-        $('#print').html('cs student; tech enthusiast;');
+        $('#print').html('cs student; aspiring programmer;');
         $('#cursor').append('<i class="fa fa-terminal" aria-hidden="true"></i>');
         $('#cursor').typeIt({
           strings: ' ',
