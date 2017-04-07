@@ -52,6 +52,23 @@ html, body {
 }
 #modern-matrix-canvas {
     z-index: 2;
+    flex: 1 0 100%;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
 }
 #modern-matrix-overlay {
     z-index: 3;

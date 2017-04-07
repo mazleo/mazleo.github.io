@@ -31,10 +31,10 @@
     </head>
     <body>
         <!--<div id="top-menu-item" class="menu-bar animated">Matrix Rain</div>-->
-        <div id="top-menu-item" class="menu-bar animated">Top</div>
+        <div id="top-menu-item" class="menu-bar animated">Matrix Rain</div>
         <div id="top-menu" class="menu-bar animated"></div>
         <div id="modern-matrix-wrapper" class="modern-matrix wrapper matrix-background"></div>
-        <div id="modern-matrix-canvas" class="modern-matrix matrix-background"></div>
+        <canvas id="modern-matrix-canvas" class="modern-matrix matrix-background"></canvas>
         <div id="modern-matrix-overlay" class="modern-matrix matrix-background"></div>
         <div id="modern-matrix-about" class="modern-matrix">
             <h1>JONNELIN MARZIELLI LEONARDO</h1>
@@ -266,5 +266,47 @@
                 </div>
             </div>
         </div>
+        <script>
+          // Initialising the canvas
+          var canvas = document.querySelector('canvas'),
+              ctx = canvas.getContext('2d');
+
+          // Setting the width and height of the canvas
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+
+          // Setting up the letters
+          var letters = 'アカサタナハマヤラワイキシチニヒミリヰウクスツヌフムユュルエケセテネヘメレヱオコソトノホモヨョロヲンあかさたなはまやらわいきしちにひみりゐうくすつぬふむゆるえけせてねへめれゑおこそとのほもよろをん';
+          letters = letters.split('');
+
+          // Setting up the columns
+          var fontSize = 13,
+              columns = canvas.width / fontSize;
+
+          // Setting up the drops
+          var drops = [];
+          for (var i = 0; i < columns; i++) {
+            drops[i] = 1;
+          }
+
+          // Setting up the draw function
+          function draw() {
+            ctx.fillStyle = 'rgba(0, 0, 0, .1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            for (var i = 0; i < drops.length; i++) {
+              var text = letters[Math.floor(Math.random() * letters.length)];
+              ctx.fillStyle = '#FF0080';
+              ctx.font = 'normal 13px monospace';
+              ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+              drops[i]++;
+              if (drops[i] * fontSize > canvas.height && Math.random() > .95) {
+                drops[i] = 0;
+              }
+            }
+          }
+
+          // Loop the animation
+          setInterval(draw, 70);
+        </script>
     </body>
 </html>
