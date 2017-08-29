@@ -53,7 +53,8 @@ body {
 }
 #social-buttons {
     text-align: center;
-    border-bottom: thin solid #29303c;
+    /* border-bottom: thin solid #29303c; */
+    border-bottom: thin solid #000000;
 }
 #social-buttons a {
     height: 100%;
@@ -70,7 +71,8 @@ body {
     transition: .1s;
 }
 #sidebar {
-    border-right: thin solid #2f3a4a;
+    border-right: thin solid #000000;
+    /* border-right: thin solid #2f3a4a; */
 }
 .menu-item {
     font-size: 18px;

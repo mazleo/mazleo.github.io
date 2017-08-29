@@ -300,7 +300,8 @@
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             for (var i = 0; i < drops.length; i++) {
               var text = letters[Math.floor(Math.random() * letters.length)];
-              ctx.fillStyle = '#FF0080';
+              // ctx.fillStyle = '#FF0080';
+              ctx.fillStyle = '#db40f6';
               ctx.font = 'normal 13px monospace';
               ctx.fillText(text, i * fontSize, drops[i] * fontSize);
               drops[i]++;
