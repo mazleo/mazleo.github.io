@@ -51,13 +51,27 @@ var connectionOpacity
 var size;
 /*------------------------------------------*/
 
-// Random number of particles from 100 - 150
+// Random number of particles ranges depending on window size
 var numParticles;
+var numParticlesRowsMin;
+var numParticlesColumnsMin;
+var numParticlesRowsMax;
+var numParticlesColumnsMax;
+var numParticlesMin;
+var numParticlesMax;
 
 // Array of particle objects
 var particles;
 
-numParticles = Math.floor((Math.random() * 51) + 100);
+numParticlesColumnsMin = canvas.width / 85;
+numParticlesRowsMin = canvas.height / 85;
+numParticlesColumnsMax = canvas.width / 70;
+numParticlesRowsMax = canvas.height / 70;
+
+numParticlesMin = numParticlesColumnsMin * numParticlesRowsMin;
+numParticlesMax = numParticlesColumnsMax * numParticlesRowsMax;
+
+numParticles = Math.round((Math.random() * (numParticlesMax - numParticlesMin)) + numParticlesMin);
 
 particles = new Array();
 for (var n = 0; n < numParticles; n++) {
