@@ -26,8 +26,8 @@ container.innerHTML = "<canvas id='canvas'></canvas>";
 
 // Get canvas and set width and height
 var canvas = document.getElementById("canvas");
-canvas.width = window.innerWidth - 20;
-canvas.height = window.innerHeight;
+canvas.width = container.offsetWidth;
+canvas.height = container.offsetHeight;
 
 // Get context
 var ctx = canvas.getContext("2d");
