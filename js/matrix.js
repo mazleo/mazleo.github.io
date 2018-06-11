@@ -86,7 +86,7 @@ CHARACTERS = "あいうえおかきくけこさしすせそたちつてとなに
 charSize = 17;
 
 numXPos = Math.ceil(canvas.width / charSize);
-numYPos = Math.ceil(400 / charSize);
+numYPos = Math.ceil((canvas.height * 0.75) / charSize);
 
 ctx.font = "bold " + charSize + "px Arial";
 
@@ -212,7 +212,7 @@ function drawChars(drops) {
 
     // Reset drop
     // Remove from taken x pos when done
-    if (drop.fadeIndex > numYPos) {
+    if (drop.fadeIndex > (canvas.height/ charSize)) {
       var indexOfXPos = takenXPos.indexOf(drop.dropXPos);
       takenXPos.splice(indexOfXPos, 1);
 
