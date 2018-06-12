@@ -34,7 +34,8 @@ var CHARACTERS;
 var FILL_STYLES;
 
 /*----- DROP -----*/
-// Number of Chars in each drop; 20 - 46
+// Number of Chars in each drop; (number of rows in screen) - (number of rows in
+// screen * 2)
 var dropLength;
 // Characters in the drop
 var dropChars;
@@ -86,7 +87,7 @@ CHARACTERS = "あいうえおかきくけこさしすせそたちつてとなに
 charSize = 17;
 
 numXPos = Math.ceil(canvas.width / charSize);
-numYPos = Math.ceil((canvas.height * 0.75) / charSize);
+numYPos = Math.ceil((canvas.height * 2) / charSize);
 
 ctx.font = "bold " + charSize + "px Arial";
 
@@ -106,7 +107,7 @@ function Char(xPosition, yPosition, index) {
 
 // Constructor for a single rain drop
 function Drop() {
-  this.dropLength = Math.floor(Math.random() * ((46 - 20) + 1)) + 20;
+  this.dropLength = Math.floor(Math.random() * ((((canvas.height / charSize) * 2) - (canvas.height / charSize)) + 1)) + (canvas.height / charSize);
   this.dropChars = [];
   this.fadeIndex = 0;
   this.numToFade = 1;
@@ -156,7 +157,7 @@ function rainAnimate() {
 
       drops[d].dropChars[indexToChange[d]].char = randomChar[d];
     }
-  }, 10);
+  }, 0);
 }
 
 // Draws all drop characters
