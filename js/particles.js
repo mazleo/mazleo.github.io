@@ -4,9 +4,6 @@
  */
 
 /*
- * HOW TO USE
- * Create container div with id="particles-js"
- *
  * DIRECTION IDs of particles
  * 1: Up
  * 2: Right
@@ -33,7 +30,7 @@ canvas.height = container.offsetHeight;
 var ctx = canvas.getContext("2d");
 
 /*----- Global variables -----*/
-var CONNECTION_RADIUS = 135;
+var CONNECTION_RADIUS = 70;
 
 /*----- Properties of particle object -----*/
 // Position; contained within canvas width and height
@@ -63,10 +60,10 @@ var numParticlesMax;
 // Array of particle objects
 var particles;
 
-numParticlesColumnsMin = canvas.width / 85;
-numParticlesRowsMin = canvas.height / 85;
-numParticlesColumnsMax = canvas.width / 70;
-numParticlesRowsMax = canvas.height / 70;
+numParticlesColumnsMin = canvas.width / 55;
+numParticlesRowsMin = canvas.height / 55;
+numParticlesColumnsMax = canvas.width / 45;
+numParticlesRowsMax = canvas.height / 45;
 
 numParticlesMin = numParticlesColumnsMin * numParticlesRowsMin;
 numParticlesMax = numParticlesColumnsMax * numParticlesRowsMax;
@@ -88,11 +85,11 @@ function Particle() {
   this.yPos = Math.random() * canvas.height;
   this.direction = Math.ceil(Math.random() * 8);
 
-  this.speed = (Math.random() * 0.3) + 0.5;
+  this.speed = (Math.random() * 0.3) + 0.1;
 
   this.particleOpacity = Math.random() * 0.5;
 
-  this.connectionOpacity = Math.random();
+  this.connectionOpacity = (Math.random() * 0.3) + 0.2;
 
   this.size = Math.random() * 3.5;
 }
