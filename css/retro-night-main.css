@@ -1,0 +1,147 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html, body, #retro-night {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+body #retro-night {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  background: url("../images/Retro night sun official.png") no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -999;
+}
+body #retro-night canvas {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+body .portfolio {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 20px;
+  color: white;
+  height: auto;
+  width: calc(100vw - 60px);
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+}
+body .portfolio * {
+  margin: 30px;
+}
+body .portfolio .about-me {
+  border-bottom: thin solid #ccc;
+  padding-bottom: 30px;
+}
+body .portfolio h2 {
+  margin: 10px 0;
+}
+body .portfolio .projects {
+  padding-bottom: 30px;
+  border-bottom: thin solid #ccc;
+}
+body .portfolio .projects h2 {
+  margin-bottom: 30px;
+}
+body .portfolio .projects .project-container {
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+body .portfolio .projects .project-container a.project-link {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
+body .portfolio .projects .project-container .project-item {
+  width: 370px !important;
+  height: 200px !important;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-flow: column nowrap !important;
+  justify-content: center;
+  align-items: center;
+}
+body .portfolio .projects .project-container .project-item:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+body .portfolio .projects .project-container .project-item i {
+  font-size: 50px;
+}
+body .portfolio .projects .project-container .rutgers-spy {
+  background-color: #B94C4C;
+}
+body .portfolio .projects .project-container .photos {
+  background-color: #0055D4;
+}
+body .portfolio .projects .project-container .songlib {
+  background-color: #2a506e;
+}
+body .portfolio .projects .project-container .retro-night {
+  background: url("../images/Retro Night Screenshot.png") no-repeat;
+  background-size: 100% 100%;
+}
+body .portfolio .projects .project-container .particles-js {
+  background: linear-gradient(135deg, #09385d, #6d1010);
+  background: url("../images/Particles Screenshot.png") no-repeat;
+  background-size: 100% 100%;
+}
+body .portfolio .projects .project-container .matrix {
+  background-color: black;
+  background: url("../images/Matrix Screenshot.png") no-repeat;
+  background-size: 100% 100%;
+}
+body .portfolio h5 {
+  margin: 0;
+}
+body .portfolio .buttons {
+  margin: 0 0 20px 0 !important;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 70px;
+}
+body .portfolio .buttons a {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+}
+body .portfolio .buttons a:hover {
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+@media only screen and (orientation: portrait) {
+  body #retro-night {
+    background: url("../images/Retro night sun official tall.png") no-repeat;
+    background-size: 100% 100%;
+    background-color: black;
+  }
+}
+
+/*# sourceMappingURL=retro-night-main.css.map */

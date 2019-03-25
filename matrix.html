@@ -1,43 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Jonnelin Marzielli Leonardo</title>
-    <meta charset="UTF-8">
-    <meta name="author" content="Jonnelin Marzielli Leonardo">
-    <meta name="description" content="Jonnelin Marzielli Leonardo - My personal website.">
-    <meta name="keywords" content="jonnelin, marzielli, leonardo, personal, website, education, career, skills, projects, contact, github">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-    <style>
-      html, body {
-        margin: 0;
-        background-color: #e9e9e9;
-        font-family: 'Roboto', sans-serif;
-        color: #3b3b3b;
-        width: 100% !important;
-        height: 100% !important;
-        display: block;
-        overflow-x: hidden;
-        box-sizing: border-box;
-      }
-      html {
-        padding: 0;
-      }
-      body {
-        padding: 0 20% 20px 10px;
-      }
-      #matrix-js {
-        width: 70%;
-        height: 50%;
-        background-color: black;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Matrix Digital Rain</h1>
-    <div id="matrix-js"></div>
-    <p>This animation is my 2nd canvas project, which I've wanted to create in so long but just never got to till now. It's more challenging than the particles animation, but it was fun figuring out how to make it work. At first I used setInterval to animate the rain, but found out that multiple setIntervals was not allowed. After that, I used requestAnimationFrame to animate it, and instead use setInterval to change random characters as the drops of the rain fell. The most challenging part was figuring out how to change the colors to include a white head and a fading tail.</p>
-    <p><a href="https://github.com/mazleo/Matrix-Digital-Rain">Github</a>; <a href="https://codepen.io/mazleo/pen/ERKaXa">Codepen</a></p>
-    <script src="js/matrix.js"></script>
-  </body>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='author' content='Jonnelin Marzielli Leonardo'>
+        <meta name='description' content='Jonnelin Marzielli Leonardo - my personal website.'>
+        <meta name="keywords" content="jonnelin, marzielli, leonardo, personal, website, education, career, skills, projects, contact, github">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel='stylesheet' href='css/project-item.css'>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h2>MATRIX JS</h2>
+        <i class="fas fa-angle-double-down"></i>
+        <div id='matrix-js'></div>
+        <div class='description'>
+            <p>This animation is my 2nd canvas project, which I've wanted to create in so long but just never got to till now. It's more challenging than the particles animation, but it was fun figuring out how to make it work. At first I used setInterval to animate the rain, but found out that multiple setIntervals was not allowed. After that, I used requestAnimationFrame to animate it, and instead use setInterval to change random characters as the drops of the rain fell. The most challenging part was figuring out how to change the colors to include a white head and a fading tail.</p>
+            <p><a href="https://github.com/mazleo/Matrix-Digital-Rain">Github; </a><a href="https://codepen.io/mazleo/pen/ERKaXa">Codepen</a></p>
+        </div>
+        <script type='text/javascript' src='js/matrix.js'></script>
+    </body>
 </html>

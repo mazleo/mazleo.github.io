@@ -180,8 +180,8 @@ INIT_FILL_STYLE = "rgba(0,173,2,1)";
 INIT_FONT = "bold 14px Monospace";
 INIT_FONT2 = "bold " + INIT_CHARSIZE + "px Monospace";
 INIT_XPOS = 17;
-INIT_YPOS = 30;
-INIT_YPOS2 = 30 + INIT_CHARSIZE;
+INIT_YPOS = 60;
+INIT_YPOS2 = 60 + INIT_CHARSIZE;
 
 DIGIT_FILL_STYLES = [];
 DIGIT_FILL_STYLES[0] = "rgba(17,97,30,1)";
@@ -264,7 +264,7 @@ function Cursor() {
   this.cursorWidth = 8;
   this.cursorHeight = 15;
   this.cursorXPos = 17;
-  this.cursorYPos = 17;
+  this.cursorYPos = 47;
 }
 
 // Constructor for each digit in the columns
@@ -291,7 +291,7 @@ function Column(initColumnXPos) {
 function Number(xPos) {
   this.numberChar = Math.floor(Math.random() * 10);
   this.numberXPos = xPos;
-  this.numberYPos = 30;
+  this.numberYPos = 60;
   this.isNumberDisplayed = false;
 }
 
