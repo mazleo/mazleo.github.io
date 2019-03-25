@@ -67,7 +67,7 @@ body {
                 margin: 0;
                 display: flex;
                 flex-flow: row wrap;
-                justify-content: space-between;
+                justify-content: flex-start;
                 align-items: flex-start;
                 align-content: flex-start;
                 a.project-link {
@@ -76,9 +76,9 @@ body {
                     margin: 0;
                 }
                 .project-item {
-                    width: 370px !important;
-                    height: 200px !important;
-                    margin: 0 0 20px 0;
+                    width: 350px !important;
+                    height: 180px !important;
+                    margin: 0 20px 20px 0;
                     display: flex;
                     flex-flow: column nowrap !important;
                     justify-content: center;
