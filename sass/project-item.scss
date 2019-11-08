@@ -129,6 +129,13 @@ body {
     }
     .noncanvas.description {
         top: 0;
+        .ui-item {
+            margin-bottom: 30px;
+        }
+        .ru-vacant-logo {
+            margin: 30px 0 30px 0;
+            display: block;
+        }
     }
 }
 @media only screen and (orientation: portrait) {
