@@ -1,0 +1,37 @@
+[
+    {
+        "class": "github",
+        "href": "https://github.com/mazleo",
+        "package": "brand",
+        "faIcon": "faGithub",
+        "text": "Github"
+    },
+    {
+        "class": "linkedin",
+        "href": "https://www.linkedin.com/in/jonnelin-marzielli-leonardo/",
+        "package": "brand",
+        "faIcon": "faLinkedin",
+        "text": "LinkedIn"
+    },
+    {
+        "class": "codepen",
+        "href": "https://codepen.io/mazleo",
+        "package": "brand",
+        "faIcon": "faCodepen",
+        "text": "Codepen"
+    },
+    {
+        "class": "email",
+        "href": "mailto:jonnelin.leonardo@gmail.com",
+        "package": "solid",
+        "faIcon": "faEnvelope",
+        "text": "Email"
+    },
+    {
+        "class": "resume",
+        "href": "https://drive.google.com/file/d/16xmTaYdY6AZU0sg3fZp5oU4fR8jVirwg/view?usp=sharing",
+        "package": "solid",
+        "faIcon": "faFile",
+        "text": "Resume"
+    }
+]

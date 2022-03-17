@@ -1,0 +1,9 @@
+[
+    {
+        "img": "/assets/img/particles.png",
+        "date": "July 6, 2020",
+        "title": "Particles JS",
+        "summary": "A particle net animation.",
+        "body": "Particles JS is my first animation project using canvas. At first, programming animations looked very challenging to me. I wondered how to make things \"move\" like they did. I wanted to try it out, so I picked this particular animation to start out with, to see how I would like it. It turns out that I really enjoyed creating it. I thought it looked really cool!\n\n<p class=\"codepen\" data-height=\"300\" data-default-tab=\"html,result\" data-slug-hash=\"RyNvVe\" data-user=\"mazleo\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\"><span>See the Pen <a href=\"https://codepen.io/mazleo/pen/RyNvVe\">Particles JS</a> by Jonnelin Marzielli Leonardo (<a href=\"https://codepen.io/mazleo\">@mazleo</a>)on <a href=\"https://codepen.io\">CodePen</a>.</span></p><script async src=\"https://cpwebassets.codepen.io/assets/embed/ei.js\"></script>"
+    }
+]

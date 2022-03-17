@@ -1,0 +1,32 @@
+[
+    {
+        "title": "ReTro",
+        "img": "/assets/img/retro.png",
+        "targetId": "",
+        "href": "https://github.com/mazleo/ReTro-BackEnd"
+    },
+    {
+        "title": "Expen",
+        "img": "/assets/img/expen.png",
+        "targetId": "",
+        "href": "https://devpost.com/software/expen"
+    },
+    {
+        "title": "Snap",
+        "img": "/assets/img/snap.png",
+        "targetId": "",
+        "href": "https://github.com/mazleo/Snap"
+    },
+    {
+        "title": "Matrix JS",
+        "img": "",
+        "targetId": "matrix-js",
+        "href": "https://codepen.io/mazleo/full/YveGOX"
+    },
+    {
+        "title": "Particles JS",
+        "img": "",
+        "targetId": "particles-js",
+        "href": "https://codepen.io/mazleo/full/RyNvVe"
+    }
+]
