@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+$min-vw: 320;
+$max-vw: 1280;
+
+@mixin fluid-font-size($min-size, $max-size) {
+    font-size: calc(#{$min-size}px + (#{$max-size} - #{$min-size}) * ((100vw - #{$min-vw}px) / (#{$max-vw} - #{$min-vw})));
+}
+
 html, body {
     padding: 0;
     margin: 0;
@@ -92,12 +99,12 @@ html, body {
         text-shadow: 0 0 10px black;
 
         .full-name {
-            font-size: 3rem;
-            font-weight: 500;
+            @include fluid-font-size(36, 90);
+            font-weight: 600;
         }
 
         .description {
-            font-size: 1.5rem;
+            @include fluid-font-size(20, 37);
             margin-top: 50px;
             max-width: 45%;
             font-weight: 450;
