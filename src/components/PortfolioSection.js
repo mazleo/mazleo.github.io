@@ -5,7 +5,7 @@ import projectsList from '../data/projects.json';
 export default class PortfolioSection extends React.Component {
     renderProjects() {
         const projects = projectsList.map((project) => 
-            <Project targetId={project.targetId} img={project.img} title={project.title} href={project.href} />
+            <Project targetId={project.targetId} img={project.img} title={project.title} href={project.href} techStack={project.techStack} description={project.description} />
         );
 
         return (

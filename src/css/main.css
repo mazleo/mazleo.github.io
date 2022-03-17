@@ -85,14 +85,17 @@ html, body {
   max-width: 95%;
   margin-top: 200px;
   padding: 30px;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 0 0 10px black;
 }
 .content-wrapper .intro-section .full-name {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
 }
 .content-wrapper .intro-section .description {
+  font-size: 1.5rem;
   margin-top: 50px;
   max-width: 45%;
+  font-weight: 450;
 }
 .content-wrapper .intro-section .socials {
   margin-top: 50px;
@@ -187,8 +190,9 @@ html, body {
 .content-wrapper .portfolio-section .grid .project #matrix-js {
   background-color: black;
 }
-.content-wrapper .portfolio-section .grid .project .title {
+.content-wrapper .portfolio-section .grid .project .text {
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -200,10 +204,20 @@ html, body {
   color: transparent;
   border-radius: 100%;
   transition: 0.5s;
+  text-align: center;
 }
-.content-wrapper .portfolio-section .grid .project .title:hover {
+.content-wrapper .portfolio-section .grid .project .text:hover {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
+}
+.content-wrapper .portfolio-section .grid .project .text .tech-stack {
+  font-size: 0.6rem;
+}
+.content-wrapper .portfolio-section .grid .project .text .tech-stack svg {
+  margin-right: 5px;
+}
+.content-wrapper .portfolio-section .grid .project .text .description {
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -89,15 +89,18 @@ html, body {
         max-width: 95%;
         margin-top: 200px;
         padding: 30px;
-        text-shadow: 1px 1px 5px black;
+        text-shadow: 0 0 10px black;
 
         .full-name {
-            font-size: 2rem;
+            font-size: 3rem;
+            font-weight: 500;
         }
 
         .description {
+            font-size: 1.5rem;
             margin-top: 50px;
             max-width: 45%;
+            font-weight: 450;
         }
 
         .socials {
@@ -196,8 +199,9 @@ html, body {
                 #matrix-js {
                     background-color: black;
                 }
-                .title {
+                .text {
                     display: flex;
+                    flex-flow: column nowrap;
                     justify-content: center;
                     align-items: center;
                     width: 100%;
@@ -209,9 +213,23 @@ html, body {
                     color: transparent;
                     border-radius: 100%;
                     transition: .5s;
+                    text-align: center;
+
                     &:hover {
                         background-color:rgba(0, 0, 0, .6);
                         color: white;
+                    }
+
+                    .tech-stack {
+                        font-size: .6rem;
+
+                        svg {
+                            margin-right: 5px;
+                        }
+                    }
+
+                    .description {
+                        font-size: .8rem;
                     }
                 }
             }
