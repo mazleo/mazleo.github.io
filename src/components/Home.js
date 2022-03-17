@@ -5,6 +5,8 @@ import PortfolioSection from './PortfolioSection';
 
 export default class Home extends React.Component {
     componentDidMount() {
+        document.title = "Jonnelin Marzielli Leonardo | Aspiring Google Software Engineer";
+
         const vertexShaderScript = document.createElement("script");
         vertexShaderScript.type = "x-shader/x-vertex";
         vertexShaderScript.id = "vertexshader";
