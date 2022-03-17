@@ -16,7 +16,7 @@ export default class IntroSection extends React.Component {
     }
     render() {
         return (
-            <div class='intro-section home-section' id='intro'>
+            <div class='intro-section home-section'>
                 <div class='full-name open-sans capitalized'>
                     {this.props.fullName}
                 </div>

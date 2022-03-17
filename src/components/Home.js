@@ -69,7 +69,7 @@ export default class Home extends React.Component {
                         <a href="#portfolio" class="item portfolio">Portfolio</a>
                     </div>
                 </div>
-                <div class="content-wrapper">
+                <div class="content-wrapper" id="intro">
                     <IntroSection fullName={fullName} description={selfDescription} />
                     <PortfolioSection />
                 </div>
