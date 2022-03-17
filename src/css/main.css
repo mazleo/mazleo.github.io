@@ -88,11 +88,11 @@ html, body {
   text-shadow: 0 0 10px black;
 }
 .content-wrapper .intro-section .full-name {
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: calc(36px + (90 - 36) * ((100vw - 320px) / (1280 - 320)));
+  font-weight: 600;
 }
 .content-wrapper .intro-section .description {
-  font-size: 1.5rem;
+  font-size: calc(20px + (37 - 20) * ((100vw - 320px) / (1280 - 320)));
   margin-top: 50px;
   max-width: 45%;
   font-weight: 450;
