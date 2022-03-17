@@ -5,7 +5,7 @@
         "targetId": "",
         "href": "https://github.com/mazleo/ReTro-BackEnd",
         "techStack": "ExpressJS, ReactJS, Mongoose,\n TimeCamp API, Google Calendar API,\n Asana API, Jest",
-        "description": "A personal productivity web app"
+        "description": "A personal productivity \nweb app"
     },
     {
         "title": "Expen",
@@ -21,7 +21,7 @@
         "targetId": "",
         "href": "https://github.com/mazleo/Snap",
         "techStack": "Native Android, Pexels API",
-        "description": "An image search android application"
+        "description": "An image search android \napplication"
     },
     {
         "title": "Matrix JS",
@@ -29,7 +29,7 @@
         "targetId": "matrix-js",
         "href": "https://codepen.io/mazleo/full/YveGOX",
         "techStack": "JavaScript, Canvas API",
-        "description": "A Matrix rain animation, inspired by \nthe movie"
+        "description": "A Matrix rain animation, \ninspired by the movie"
     },
     {
         "title": "Particles JS",
@@ -37,6 +37,6 @@
         "targetId": "particles-js",
         "href": "https://codepen.io/mazleo/full/RyNvVe",
         "techStack": "JavaScript, Canvas API",
-        "description": "A particle net animation, as practically \nseen everywhere"
+        "description": "A particle net animation, as \npractically seen everywhere"
     }
 ]
