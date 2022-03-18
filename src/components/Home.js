@@ -7,6 +7,21 @@ export default class Home extends React.Component {
     componentDidMount() {
         document.title = "Jonnelin Marzielli Leonardo | Aspiring Software Engineer";
 
+        const googleTagManagerScript = document.createElement("script");
+        googleTagManagerScript.async = "true";
+        googleTagManagerScript.src = "https://www.googletagmanager.com/gtag/js?id=G-0K16VJL268";
+        document.head.appendChild(googleTagManagerScript);
+
+        const googleAnalyticsScript = document.createElement("script");
+        googleAnalyticsScript.innerHTML = `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-0K16VJL268');
+        `;
+        document.head.appendChild(googleAnalyticsScript);
+
         const vertexShaderScript = document.createElement("script");
         vertexShaderScript.type = "x-shader/x-vertex";
         vertexShaderScript.id = "vertexshader";
