@@ -69,7 +69,7 @@ export default class Home extends React.Component {
 
                 As for my background, I am currently a <span class='yellow'>Unit Computing Specialist</span> at <span class='red'>Rutgers University</span>; the generic title encapsulates what I do day to day, in that I do not specialize but work with different technologies as well. Recently, I've mostly delved in or completed <span class='orange'>DevOps</span> and <span class='blue'>Front-End</span> duties. Before that, I received a <span class='green'>BS in Computer Science</span> in 2021.<br /><br />
 
-                As for "outside of work", my curious nature doesn't only apply within the tech field. I do dabble in things like <span class='purple'>watercolor</span>/<span class='pink'>anime art</span> (which then translate to me enjoying <span class='blue'>UI design</span>). Other things I like to do are <span class='pink'>cuddling with my cat</span> and <span class='orange'>playing video games</span> :).
+                As for "outside of work", my curious nature doesn't only apply within the tech field. I do dabble in things like <span class='purple'>watercolor</span>/<span class='pink'>anime art</span> (which then translates to me enjoying <span class='blue'>UI design</span>). Other things I like to do are <span class='pink'>cuddling with my cat</span> and <span class='orange'>playing video games</span> :).
             </div>;
         return (
             <div id="home">
