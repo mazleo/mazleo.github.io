@@ -17,12 +17,8 @@ export default class IntroSection extends React.Component {
     render() {
         return (
             <div class='intro-section home-section'>
-                <div class='full-name open-sans capitalized'>
-                    {this.props.fullName}
-                </div>
-                <div class='description'>
-                    {this.props.description}
-                </div>
+                {this.props.fullName}
+                {this.props.description}
                 {this.renderSocials()}
             </div>
         );

@@ -101,6 +101,16 @@ html, body {
         .full-name {
             @include fluid-font-size(36, 90);
             font-weight: 600;
+
+            .purple {
+                text-shadow: 3px 3px #938DF9;
+            }
+            .blue {
+                text-shadow: 3px 3px #8BE9FD;
+            }
+            .green {
+                text-shadow: 3px 3px #33DA7B;
+            }
         }
 
         .description {
@@ -108,6 +118,28 @@ html, body {
             margin-top: 50px;
             max-width: 45%;
             font-weight: 450;
+
+            .pink {
+                color: #F25069;
+            }
+            .green {
+                color: #33DA7B;
+            }
+            .purple {
+                color: #938DF9;
+            }
+            .blue {
+                color: #8BE9FD;
+            }
+            .orange {
+                color: #F2995A;
+            }
+            .yellow {
+                color: #E6D478;
+            }
+            .red {
+                color: #FF5555;
+            }
         }
 
         .socials {
