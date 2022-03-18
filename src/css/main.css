@@ -91,11 +91,41 @@ html, body {
   font-size: calc(36px + (90 - 36) * ((100vw - 320px) / (1280 - 320)));
   font-weight: 600;
 }
+.content-wrapper .intro-section .full-name .purple {
+  text-shadow: 3px 3px #938DF9;
+}
+.content-wrapper .intro-section .full-name .blue {
+  text-shadow: 3px 3px #8BE9FD;
+}
+.content-wrapper .intro-section .full-name .green {
+  text-shadow: 3px 3px #33DA7B;
+}
 .content-wrapper .intro-section .description {
   font-size: calc(20px + (37 - 20) * ((100vw - 320px) / (1280 - 320)));
   margin-top: 50px;
   max-width: 45%;
   font-weight: 450;
+}
+.content-wrapper .intro-section .description .pink {
+  color: #F25069;
+}
+.content-wrapper .intro-section .description .green {
+  color: #33DA7B;
+}
+.content-wrapper .intro-section .description .purple {
+  color: #938DF9;
+}
+.content-wrapper .intro-section .description .blue {
+  color: #8BE9FD;
+}
+.content-wrapper .intro-section .description .orange {
+  color: #F2995A;
+}
+.content-wrapper .intro-section .description .yellow {
+  color: #E6D478;
+}
+.content-wrapper .intro-section .description .red {
+  color: #FF5555;
 }
 .content-wrapper .intro-section .socials {
   margin-top: 50px;

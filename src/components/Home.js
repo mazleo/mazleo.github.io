@@ -57,8 +57,20 @@ export default class Home extends React.Component {
         document.head.appendChild(matrixScript);
     }
     render() {
-        const fullName = "Jonnelin Marzielli Leonardo"
-        const selfDescription = `I love dabbling in different technologies, and some that I'm currently interested in are Full Stack Development, Game Development, and Android Development. I also wear multiple hats in my current role at Rutgers University, mostly in DevOps and Front-End.\n\nPrevious to my current role, I earned a Computer Science degree in Rutgers University. Now, I am a visiting student at RVCC for personal enrichment purposes.\n\nI like being creative; some of the hobbies I've done are watercolor art and anime art. My art-side does somewhat translate into coding as well. I do enjoy designing user interfaces, and have found myself getting a lot better over time. I also just love creating things out of nowhere; but I love the fact that I can create something useful even more.\n\nOutside of coding, I like to cuddle with my cat and play video games :).`;
+        const fullName = () => 
+            <div class='full-name open-sans capitalized'>
+                <span class='purple'>Jonnelin</span> <span class='blue'>Marzielli</span> <span class='green'>Leonardo</span>
+            </div>;
+        const selfDescription = () => 
+            <div class='description'>
+                I am a <span class='pink'>curious</span> one, generally interested in many different things. <br /><br />
+
+                I like to <span class='green'>dabble</span> in many different technologies; as such, although I currently am not definite on the exact role I'd like to be in, I am interested in pursuing a <span class='purple'>Full-Stack Development</span> role. Though, I do sometimes dabble in <span class='blue'>Game Development</span> and <span class='orange'>Android Development</span> in my spare time.<br /><br />
+
+                As for my background, I am currently a <span class='yellow'>Unit Computing Specialist</span> at <span class='red'>Rutgers University</span>; the generic title encapsulates what I do day to day, in that I do not specialize but work with different technologies as well. Recently, I've mostly delved in or completed <span class='orange'>DevOps</span> and <span class='blue'>Front-End</span> duties. Before that, I received a <span class='green'>BS in Computer Science</span> in 2021.<br /><br />
+
+                As for "outside of work", my curious nature doesn't only apply within the tech field. I do dabble in things like <span class='purple'>watercolor</span>/<span class='pink'>anime art</span> (which then translate to me enjoying <span class='blue'>UI design</span>). Other things I like to do are cuddling with my cat and playing video games :).
+            </div>;
         return (
             <div id="home">
                 <canvas id="particlewave-canvas">
@@ -70,7 +82,7 @@ export default class Home extends React.Component {
                     </div>
                 </div>
                 <div class="content-wrapper" id="intro">
-                    <IntroSection fullName={fullName} description={selfDescription} />
+                    <IntroSection fullName={fullName()} description={selfDescription()} />
                     <PortfolioSection />
                 </div>
             </div>
