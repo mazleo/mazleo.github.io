@@ -78,13 +78,15 @@ export default class Home extends React.Component {
             </div>;
         const selfDescription = () => 
             <div class='description'>
-                I am a <span class='pink'>curious</span> one, generally interested in many different things. <br /><br />
+                Hey there 👋<br /><br />
 
-                I like to <span class='green'>dabble</span> in many different technologies; as such, although I currently am not definite on the exact role I'd like to be in, I am interested in pursuing a <span class='purple'>Full-Stack Development</span> role. Though, I do sometimes dabble in <span class='blue'>Game Development</span> and <span class='orange'>Android Development</span> in my spare time. But generally, I know I want to be in the <span class='pink'>Software Engineering</span> field.<br /><br />
+                I'm <span class='green'>Jonnelin</span>, a <span class='blue'>Software Engineer</span> at <span class='blue'>G</span><span class='red'>o</span><span class='yellow'>o</span><span class='blue'>g</span><span class='green'>l</span><span class='red'>e</span>.<br /><br />
 
-                As for my background, I am currently a <span class='yellow'>Unit Computing Specialist</span> at <span class='red'>Rutgers University</span>; the generic title encapsulates what I do day to day, in that I do not specialize but work with different technologies as well. Recently, I've mostly delved in or completed <span class='orange'>DevOps</span> and <span class='blue'>Front-End</span> duties. I am also currently a <span class='purple'>visiting part-time student</span> at <span class='yellow'>RVCC</span> for <span class='pink'>personal enrichment</span> purposes; and before that, I received a <span class='green'>BS in Computer Science</span> in 2021.<br /><br />
+                I guess to describe myself, I am a <span class='purple'>naturally curious</span> person, interested in a wide variety of topics.<br />
+                I guess examples would be that its pretty normal for me to think about <span class='pink'>video game</span> <span class='blue'>design</span> and <span class='green'>development</span> someday, thinking about how awesome intricate games like <span class='red'>Project Zomboid</span> are or how to <span class='orange'>procedurally generate</span> <span class='green'>poly terrain</span> and <span class='blue'>water</span> (which is really cool by the way).<br />
+                Another day I could be <span class='blue'>reading productivity books</span>, like <span class='yellow'>notetaking</span>. Another, I could be <span class='purple'>watching a course on digital art</span> (I think you get the gist now).<br /><br />
 
-                As for "outside of work", my curious nature doesn't only apply within the tech field. I do dabble in things like <span class='purple'>watercolor</span>/<span class='pink'>anime art</span> (which then translates to me enjoying <span class='blue'>UI design</span>). Other things I like to do are <span class='pink'>cuddling with my cat</span> and <span class='orange'>playing video games</span> :).
+                But to describe my current role, I mostly work on <span class='green'>Android development</span>. In past roles I dabbled in <span class='blue'>front-end</span> and <span class='yellow'>devops</span> development a bit. I guess it's pretty fitting for me to work on different things.<br />
             </div>;
         return (
             <div id="home">
