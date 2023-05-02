@@ -5,7 +5,7 @@ import PortfolioSection from './PortfolioSection';
 
 export default class Home extends React.Component {
     componentDidMount() {
-        document.title = "Jonnelin Marzielli Leonardo | Aspiring Software Engineer";
+        document.title = "Jonnelin Marzielli Leonardo | Google Software Engineer";
 
         const googleTagManagerScript = document.createElement("script");
         googleTagManagerScript.async = "true";

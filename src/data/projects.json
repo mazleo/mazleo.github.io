@@ -1,13 +1,5 @@
 [
     {
-        "title": "ReTro",
-        "img": "/assets/img/retro.png",
-        "targetId": "",
-        "href": "https://github.com/mazleo/ReTro-BackEnd",
-        "techStack": "ExpressJS, ReactJS, Mongoose,\n TimeCamp API, Google Calendar API,\n Asana API, Jest",
-        "description": "A personal productivity \nweb app"
-    },
-    {
         "title": "Expen",
         "img": "/assets/img/expen.png",
         "targetId": "",
