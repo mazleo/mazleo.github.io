@@ -1,27 +1,35 @@
 import React from 'react';
-import BlogElement from './BlogElement';
+import Blog from './Blog';
+import BlogTile from './BlogTile';
 import blogList from '../data/blogs.json';
 
 export default class BlogSection extends React.Component {
-    renderMostRecentGrid() {
-        const blogElements = blogList.map((blog) => 
-            <BlogElement img={blog.img} date={blog.date} title={blog.title} summary={blog.summary} />
+    renderBlogTiles() {
+        const blogTile = blogList.map((blog) => 
+            <BlogTile img={blog.thumbnail} date={blog.date} title={blog.title} summary={blog.summary} tag={blog.tag} />
         );
-
         return (
-            <div class="most-recent-grid">
-                {blogElements}
+            <div class="blog-tiles">
+                {blogTile}
+            </div>
+        );
+    }
+    renderBlogs() {
+        const blogs = blogList.map((blog) => 
+            <Blog title={blog.title} date={blog.date} hero={blog.hero} blogBody={blog.blogBody} tag={blog.tag} />
+        );
+        return (
+            <div class='blog-content'>
+                {blogs}
             </div>
         );
     }
     render() {
         return (
-            <div class="blog-section home-section">
+            <div id="blog" class="blog-section home-section">
                 <div class="title open-sans capitalized">Blog</div>
-                {this.renderMostRecentGrid()}
-                <div class="link-wrapper">
-                    <a href="/" class="link open-sans capitalized">See More</a>
-                </div>
+                {this.renderBlogTiles()}
+                {this.renderBlogs()}
             </div>
         );
     }

@@ -1,0 +1,27 @@
+<p>I've been quite interested in procedural terrain for a while; and I've dabbled a bit into it. Though, I've never really gone this deep into it. Everytime I think about procedural terrain, I am reminded of Valheim and how cool that everything is generated automatically. Likely, Valheim will be a big inspiration to my project, Project Mythos (I don't know the name yet; why not google names related to mythology lol).</p>
+
+<p>So the past few weeks, I've been designing and implementing procedural terrain. It can be quite complicated depending on how it's implemented, but I've definitely been enjoying it so far. The above hero is an image of one of the terrains generated, which is a 300 units x 300 units which can also be represented as meters, which would come out to 90,000 sq. m.</p>
+
+<p>In this iteration, there are 3 main biomes: the alpine, grasslands, and aquatic biomes. It's not distinguishable in this iteration yet, but that will be the goal in the next iteration 🙂.</p>
+
+<p>To explain a bit about the details of the implementation, the technique used here uses the Perlin Noise. Perlin noise is essentially noise that consists of gradual changes in values.</p>
+
+<p>For example, here is an image of noise:</p>
+
+<p><img src='/assets/img/noise.jpeg' /></p>
+
+<p>If we think of these colors as values, the changes in values are non-gradual. Perlin noise, on the other hand, consists of gradual changes in values:</p>
+
+<p><img src='/assets/img/perlinnoise.jpeg' /></p>
+
+<p>We see that there is a gradual change from white to black (in other words, shades of gray). This is why Perlin Noise is commonly used for procedural terrain. Instead of treating these as colors, these can be treated as height values so that darker blacks are heigher in altitude for example.</p>
+
+<p>The usage of Perlin noise differs for each project. In this iteration, multiple perlin noise models are used. Here, there are separate models for each biome: alpine, aquatic, and grasslands biome models. Each one have their own parameters as to how tight the wavelengths are and how high the amplitudes of the waves are. For example, grasslands will not have much waves and hence have lower frequency or have looser waves, but also has less amplitudes so the waves aren't very high. On the other hand, the alpine biome has higher frequency and amplitude for its waves. To combine these together, there is another model which determines which biomes are where. In other words, certain values at certain points map to a specific biome. ie. maybe values from 0.0 to 0.3 is the aquatic biome, 0.3 to 0.6 for grasslands, and 0.6 to 1.0 for alpine. Since the locations of the biomes are now determines, the model specific to the biome is used in that location.</p>
+
+<p>The actual implementation details are more complicated, but that is essentially a high-level overview of how this works. It took a couple iterations to achieve the current one, but I really enjoyed figuring it out! It was pretty gratifying to see the result and how cool it looks 😆.</p>
+
+<p><iframe src="https://drive.google.com/file/d/1lezv-C-tHB3Eg3iJd6lWmT0VHEPAKwU_/preview" width="640" height="480" allow="autoplay"></iframe></p>
+
+<p>It's actually in low poly style but since the poly units are small it makes it look like small squares. I actually like how it looks.</p>
+
+<p>Anyway, thanks for coming by! :)</p>

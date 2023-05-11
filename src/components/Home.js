@@ -2,6 +2,7 @@ import React from 'react';
 
 import IntroSection from './IntroSection';
 import PortfolioSection from './PortfolioSection';
+import BlogSection from './BlogSection';
 
 export default class Home extends React.Component {
     componentDidMount() {
@@ -96,11 +97,13 @@ export default class Home extends React.Component {
                     <div class="menu">
                         <a href="#intro" class="item about">About</a>
                         <a href="#portfolio" class="item portfolio">Portfolio</a>
+                        <a href="#blog" class="item blog">Blog</a>
                     </div>
                 </div>
                 <div class="content-wrapper" id="intro">
                     <IntroSection fullName={fullName()} description={selfDescription()} />
                     <PortfolioSection />
+                    <BlogSection />
                 </div>
             </div>
         );
